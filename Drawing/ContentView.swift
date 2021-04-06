@@ -39,14 +39,9 @@ struct Arc: Shape {
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Triangle()
-                .stroke(Color.red, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
-                .frame(width:300, height: 300)
-            Arc(startAngle: .degrees(0), endAngle: .degrees(110), clockwise: true)
-                .stroke(Color.blue, lineWidth: 10)
-                .frame(width: 300, height: 300)
-        }
+        // automatically fills screen, cutting off shape at left and right borders
+        Circle()
+            .stroke(Color.blue, lineWidth: 40)
     }
 }
 
