@@ -41,7 +41,7 @@ struct ContentView: View {
     var body: some View {
         // automatically fills screen, cutting off shape at left and right borders
         Circle()
-            .stroke(Color.blue, lineWidth: 40)
+            .strokeBorder(Color.blue, lineWidth: 40)
     }
 }
 
